@@ -8,3 +8,6 @@ This overcomes the 200KB APIM policy limit but still uses Event Hubs to preserve
 
 ### BlobLogger - Saves content data to blob storage 
 This overcomes both the 200KB APIM policy and the 1MB EventHub limit
+
+## APIM Policy Fragments
+Inbound and Outbound snippets
