@@ -1,0 +1,17 @@
+<fragment>
+  <send-one-way-request mode="copy" timeout="120">
+    <set-url>{{LargePayloadLoggerURL}}</set-url>
+    <set-header name="SessionID" exists-action="override">
+      <value>"@(context.Request.Headers.GetValueOrDefault("Session-Identifier"))"</value>
+    </set-header>
+    <set-header name="PayloadType" exists-action="override">
+      <value>"Prompt"</value>
+    </set-header>
+    <set-method>POST</set-method>
+    <set-body>@{
+    return new JObject(
+        new JProperty("requestBody", context.Request.Body?.As<string>(true))
+        ).ToString();   
+    }</set-body>
+  </send-one-way-request>
+</fragment>
