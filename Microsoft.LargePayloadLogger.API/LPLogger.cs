@@ -4,10 +4,8 @@ using Azure.Storage.Blobs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
-using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Logging;
 using Microsoft.LargePayloadLogger.API.Models;
-using Newtonsoft.Json;
 using System.Text;
 
 namespace Microsoft.LargePayloadLogger.API
