@@ -1,6 +1,11 @@
 # Large Payload Logger
 Created to overcome the 200kb limitation of APIM Policy LogToEventHub and also to overcome the 1MB limitation of EventHubs.
 
+## Architecture
+![LargePayloadLogger](https://github.com/ThePreston/Large-Payload-Logger/assets/84995595/bf97829f-7af3-4062-bb4c-b76c12fb49c4)
+
+
+
 ## Methods
 
 ### ClaimCheckLogger - Saves content data to blob storage but saves context information to Event Hub
