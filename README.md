@@ -2,7 +2,7 @@
 Created to overcome the 200kb limitation of APIM Policy LogToEventHub and also to overcome the 1MB limitation of EventHubs.
 
 ## Architecture
-![LargePayloadLogger](https://github.com/ThePreston/Large-Payload-Logger/assets/84995595/bf97829f-7af3-4062-bb4c-b76c12fb49c4)
+![LargePayloadLog](https://github.com/ThePreston/Large-Payload-Logger/assets/84995595/8736b978-c08e-48cf-b0b9-20d190a4add6)
 
 
 
