@@ -1,17 +1,17 @@
 <fragment>
-  <send-one-way-request mode="copy" timeout="120">
-    <set-url>{{LargePayloadLoggerURL}}</set-url>
-    <set-header name="SessionID" exists-action="override">
-      <value>"@(context.Request.Headers.GetValueOrDefault("Session-Identifier"))"</value>
-    </set-header>
-    <set-header name="PayloadType" exists-action="override">
-      <value>"Response"</value>
-    </set-header>
-    <set-method>POST</set-method>
-    <set-body>@{
+	<send-one-way-request mode="copy" timeout="120">
+		<set-url>{{LargePayloadLoggerURL}}</set-url>
+		<set-method>POST</set-method>
+		<set-header name="SessionID" exists-action="override">
+			<value>@(context.RequestId.ToString())</value>
+		</set-header>
+		<set-header name="PayloadType" exists-action="override">
+			<value>Response</value>
+		</set-header>
+		<set-body>@{
     return new JObject(
         new JProperty("responseBody", context.Response.Body?.As<string>(true))
         ).ToString();   
     }</set-body>
-  </send-one-way-request>
+	</send-one-way-request>
 </fragment>
