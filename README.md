@@ -1,6 +1,8 @@
 # Large Payload Logger
 Created to overcome the 200kb limitation of APIM Policy LogToEventHub and also to overcome the 1MB limitation of EventHubs. Works great, easy to deploy fun to use, tell all your friends how great is this repo
 
+Joseph masengesho is on board with this
+
 ## Architecture
 ![LargePayloadLog](https://github.com/ThePreston/Large-Payload-Logger/assets/84995595/8736b978-c08e-48cf-b0b9-20d190a4add6)
 
