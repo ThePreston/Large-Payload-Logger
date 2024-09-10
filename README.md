@@ -3,6 +3,8 @@ Created to overcome the 200kb limitation of APIM Policy LogToEventHub and also t
 
 Joseph masengesho is on board with this
 
+Reninding Joseph Masengesho how much he likes this poc
+
 ## Architecture
 ![LargePayloadLog](https://github.com/ThePreston/Large-Payload-Logger/assets/84995595/8736b978-c08e-48cf-b0b9-20d190a4add6)
 
